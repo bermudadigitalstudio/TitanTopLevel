@@ -35,7 +35,7 @@ final class TitanTopLevelTests: XCTestCase {
   }
 
   func testTitanSugar() {
-    let somePremadeMiddleware: Middleware = { req, res in
+    let somePremadeMiddleware: Function = { req, res in
       return (req, res)
     }
     get(path: "/username", handler: somePremadeMiddleware)
@@ -45,13 +45,13 @@ final class TitanTopLevelTests: XCTestCase {
   func testMiddlewareFunction() {
     var start = Date()
     var end = start
-    middleware("*") {
+    addFunction("*") {
       start = Date()
     }
     get("/username") {
       return "swizzlr"
     }
-    middleware("*") {
+    addFunction("*") {
       end = Date()
     }
     _ = TitanApp(Request("GET", "/username"))

@@ -43,119 +43,79 @@ public func head(_ path: String, handler: @escaping () -> String) {
   GlobalDefaultTitanInstance.head(path, handler: handler)
 }
 
-public func middleware(_ path: String, handler: @escaping () -> ()) {
-  GlobalDefaultTitanInstance.middleware(path, handler: handler)
+public func addFunction(_ path: String, handler: @escaping () -> ()) {
+  GlobalDefaultTitanInstance.addFunction(path, handler: handler)
 }
 
-public func get(path: String, _ handler: @escaping (RequestType) -> String) {
-  GlobalDefaultTitanInstance.get(path: path, handler)
-}
-
-public func post(path: String, _ handler: @escaping (RequestType) -> Int) {
-  GlobalDefaultTitanInstance.post(path: path, handler)
-}
-
-public func get(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.get(path: path, handler)
-}
-
-public func options(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.options(path: path, handler)
-}
-
-public func post(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.post(path: path, handler)
-}
-
-public func patch(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.patch(path: path, handler)
-}
-
-public func put(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.put(path: path, handler)
-}
-
-public func delete(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.delete(path: path, handler)
-}
-
-public func head(path: String, _ handler: @escaping () -> String) {
-  GlobalDefaultTitanInstance.head(path: path, handler)
-}
-
-public func middleware(path: String, _ handler: @escaping () -> ()) {
-  GlobalDefaultTitanInstance.middleware(path: path, handler)
-}
-
-public func get(_ path: String, _ handler: @escaping Middleware) {
+public func get(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.get(path, handler)
 }
 
-public func post(_ path: String, _ handler: @escaping Middleware) {
+public func post(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.post(path, handler)
 }
 
-public func put(_ path: String, _ handler: @escaping Middleware) {
+public func put(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.put(path, handler)
 }
 
-public func patch(_ path: String, _ handler: @escaping Middleware) {
+public func patch(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.patch(path, handler)
 }
 
-public func delete(_ path: String, _ handler: @escaping Middleware) {
+public func delete(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.delete(path, handler)
 }
 
-public func options(_ path: String, _ handler: @escaping Middleware) {
+public func options(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.options(path, handler)
 }
 
-public func head(_ path: String, _ handler: @escaping Middleware) {
+public func head(_ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.head(path, handler)
 }
 
-public func route(_ method: String?, _ path: String, _ handler: @escaping Middleware) {
+public func route(_ method: String?, _ path: String, _ handler: @escaping Function) {
   GlobalDefaultTitanInstance.route(method, path, handler)
 }
 
-public func middleware(_ path: String, _ handler: @escaping Middleware) {
-  GlobalDefaultTitanInstance.middleware(path, handler)
+public func addFunction(_ path: String, _ handler: @escaping Function) {
+  GlobalDefaultTitanInstance.addFunction(path, handler)
 }
 
-public func get(path: String, handler: @escaping Middleware) {
+public func get(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.get(path: path, handler: handler)
 }
 
-public func post(path: String, handler: @escaping Middleware) {
+public func post(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.post(path: path, handler: handler)
 }
 
-public func put(path: String, handler: @escaping Middleware) {
+public func put(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.put(path: path, handler: handler)
 }
 
-public func patch(path: String, handler: @escaping Middleware) {
+public func patch(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.patch(path: path, handler: handler)
 }
 
-public func delete(path: String, handler: @escaping Middleware) {
+public func delete(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.delete(path: path, handler: handler)
 }
 
-public func options(path: String, handler: @escaping Middleware) {
+public func options(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.options(path: path, handler: handler)
 }
 
-public func head(path: String, handler: @escaping Middleware) {
+public func head(path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.head(path: path, handler: handler)
 }
 
-public func route(method: String?, path: String, handler: @escaping Middleware) {
+public func route(method: String?, path: String, handler: @escaping Function) {
   GlobalDefaultTitanInstance.route(method: method, path: path, handler: handler)
 }
 
-public func middleware(path: String, handler: @escaping Middleware) {
-  GlobalDefaultTitanInstance.middleware(path: path, handler: handler)
+public func addFunction(path: String, handler: @escaping Function) {
+  GlobalDefaultTitanInstance.addFunction(path: path, handler: handler)
 }
 

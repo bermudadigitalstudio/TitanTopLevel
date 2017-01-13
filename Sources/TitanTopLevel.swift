@@ -8,3 +8,7 @@ public func TitanAppReset() {
   GlobalDefaultTitanInstance = Titan()
   TitanApp = GlobalDefaultTitanInstance.app
 }
+
+func addFunction(_ function: @escaping Function) {
+  GlobalDefaultTitanInstance.addFunction(function)
+}
