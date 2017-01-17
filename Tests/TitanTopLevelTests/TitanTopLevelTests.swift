@@ -96,7 +96,7 @@ final class TitanTopLevelTests: XCTestCase {
       return username
     }
 
-    post("/username") { (req: RequestType) in
+    post("/username") { (req: RequestType) -> Int in
       username = req.body
       return 201
     }
